@@ -64,18 +64,6 @@ public class Deck
         }
     }
 
-    /**
-     * returns all the cards left in the deck as a string put together
-     */
-    public String toString()
-    {
-        String str = "";
-        for(int i = 0; i < c.size(); i++)
-        {
-            str += c.get(i).toString();
-        }
-        return str;
-    }
 
 
     public boolean equals(Object o)
@@ -201,7 +189,7 @@ public class Deck
         }
         return theCard;
     }
-}
+
 
 
     /**
@@ -215,19 +203,6 @@ public class Deck
         return str;
     }
 
-    /**
-     * checks if one deck equals another
-     */
-    public boolean equals(Object o) {
-        Deck other = (Deck) o;
-        int num = this.numCards();
-        if (num != other.numCards())
-            return false;
-        else {
-            for (int i = 0; i < num; i++)
-                if (!this.c.get(i).equals(other.c.get(i)))
-                    return false;
-            return true;
-        }
+
     }
 
