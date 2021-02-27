@@ -1,0 +1,12 @@
+{
+    "name": "Emperor Card Game",
+    "extensions": [
+        "ms-vsliveshare.vsliveshare",
+        "yzhang.markdown-all-in-one",
+        "ms-azuretools.vscode-docker"
+    ],
+    "settings": {
+        "editor.tabSize": 4
+    },
+    "dockerFile": "Dockerfile",
+}
