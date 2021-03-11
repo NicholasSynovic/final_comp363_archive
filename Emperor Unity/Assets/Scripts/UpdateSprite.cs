@@ -9,11 +9,13 @@ public class UpdateSprite : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Selectable selectable;
     private Emperor emperor;
+    private UserInput userInput;
     // Start is called before the first frame update
     void Start()
     {
         List<string> deck = Emperor.GenerateStdDeck();
         emperor = FindObjectOfType<Emperor>();
+        userInput = FindObjectOfType<UserInput>();
 
         int i = 0;
         foreach(string card in deck)
@@ -39,6 +41,18 @@ public class UpdateSprite : MonoBehaviour
         else
         {
             spriteRenderer.sprite = cardBack;
+        }
+
+        if(userInput.selectedCard)
+        {
+            //TODO Remove from update and make this change happen only when card is clicked 
+            if(name == userInput.selectedCard.name){
+                spriteRenderer.color = Color.cyan;
+            }
+            else
+            {
+                spriteRenderer.color = Color.white;
+            }
         }
     }
 }

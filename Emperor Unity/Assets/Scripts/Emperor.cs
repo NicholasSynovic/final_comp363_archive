@@ -8,31 +8,36 @@ public class Emperor : MonoBehaviour
     public Sprite[] cardFaces;
     public GameObject cardPrefab;
 
+    public GameObject wastePos;
     public GameObject[] bottomPos;
     public GameObject[] topPos;
+
     public static string[] deckN = new string[] {"1", "2"};
     public static string[] suits = new string[] {"C","D","H","S"};
     public static string[] values = new string[] { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
-    public List<string>[] bottoms;
-    public List<string>[] tops;
+    
+    public List<string>[] tableaus;
+    public List<string>[] foundations;
+    public List<string> waste;
 
-    private List<string> bottom0 = new List<string>();
-    private List<string> bottom1 = new List<string>();
-    private List<string> bottom2 = new List<string>();
-    private List<string> bottom3 = new List<string>();
-    private List<string> bottom4 = new List<string>();
-    private List<string> bottom5 = new List<string>();
-    private List<string> bottom6 = new List<string>();
-    private List<string> bottom7 = new List<string>();
-    private List<string> bottom8 = new List<string>();
-    private List<string> bottom9 = new List<string>();
+
+    private List<string> tableau0 = new List<string>();
+    private List<string> tableau1 = new List<string>();
+    private List<string> tableau2 = new List<string>();
+    private List<string> tableau3 = new List<string>();
+    private List<string> tableau4 = new List<string>();
+    private List<string> tableau5 = new List<string>();
+    private List<string> tableau6 = new List<string>();
+    private List<string> tableau7 = new List<string>();
+    private List<string> tableau8 = new List<string>();
+    private List<string> tableau9 = new List<string>();
 
     public List<string> deck;
 
     // Start is called before the first frame update
     void Start()
     {
-        bottoms = new List<string>[] {bottom0,bottom1,bottom2,bottom3,bottom4,bottom5,bottom6,bottom7,bottom8,bottom9};
+        tableaus = new List<string>[] {tableau0,tableau1,tableau2,tableau3,tableau4,tableau5,tableau6,tableau7,tableau8,tableau9};
         Play();
 
     }
@@ -48,7 +53,10 @@ public class Emperor : MonoBehaviour
     //Populates the deck with 104 cards (x2 of each card of each suit and value) and shuffles deck
     public void Play()
     {
+        //104 cards are generated
         deck = GenerateStdDeck();
+
+        //cards are shuffled randomly
         Shuffle(deck);
         
         //test functionality: prints all cards generated to unity activity console
@@ -56,7 +64,10 @@ public class Emperor : MonoBehaviour
             print(card);
         }
 
+        //4 cards are put into each tableau list
         EmperorSort();
+
+        //cards are instantiated and the tableau cards are properly flipped up at the top
         StartCoroutine(EmperorDeal());
         print(deck.Count);
     }
@@ -93,18 +104,21 @@ public class Emperor : MonoBehaviour
         }
     }
 
+    //Instantiates and creates the 
+
     IEnumerator EmperorDeal()
     {
         for (int i = 0; i < 10; i++ )
         {
             float yOffset = 0;
             float zOffset = 0.3f;
-            foreach(string card in bottoms[i])
+            foreach(string card in tableaus[i])
             {
                 yield return new WaitForSeconds(0.01f);
                 GameObject newCard = Instantiate(cardPrefab, new Vector3(bottomPos[i].transform.position.x, bottomPos[i].transform.position.y - yOffset, bottomPos[i].transform.position.z - zOffset), Quaternion.identity, bottomPos[i].transform);
                 newCard.name = card;
-                if(card == bottoms[i][bottoms[i].Count - 1])
+                newCard.GetComponent<Selectable>().posRow = i;
+                if(card == tableaus[i][tableaus[i].Count - 1])
                 {
                     newCard.GetComponent<Selectable>().faceUp = true;
                 }
@@ -121,9 +135,25 @@ public class Emperor : MonoBehaviour
         {
             for (int j = 0; j < 4; j++)
             {
-                bottoms[i].Add(deck.Last<string>());
+                tableaus[i].Add(deck.Last<string>());
                 deck.RemoveAt(deck.Count - 1);
             }
         }
+    }
+
+
+    //draws one card from the deck and places it faceup at the top of waste pile
+    public void DrawDeck()
+    {
+        float zOffset = 0.01f * waste.Count;
+        if(deck.Count > 0 ){
+            waste.Add(deck.Last<string>());
+            deck.RemoveAt(deck.Count - 1);
+            GameObject newWasteCard = Instantiate(cardPrefab, new Vector3(wastePos.transform.position.x, wastePos.transform.position.y, wastePos.transform.position.z - zOffset), Quaternion.identity, wastePos.transform);
+            newWasteCard.name = waste[waste.Count - 1];
+            newWasteCard.GetComponent<Selectable>().faceUp = true;
+            newWasteCard.GetComponent<Selectable>().inWaste = true;
+        }
+
     }
 }
