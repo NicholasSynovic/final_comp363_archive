@@ -6,7 +6,6 @@ public class Selectable : MonoBehaviour
 {
     public bool faceUp = false;
     public bool onFoundation = false;
-    public bool onTopOfPile = false;
     public bool inWaste = false;
     public string suit;
     public int rank;

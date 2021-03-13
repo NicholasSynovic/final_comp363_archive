@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 184925898}
   - component: {fileID: 184925900}
   - component: {fileID: 184925899}
+  - component: {fileID: 184925901}
   m_Layer: 0
   m_Name: Foundation7
   m_TagString: Foundation
@@ -381,6 +382,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 7.26}
   m_EdgeRadius: 0
+--- !u!114 &184925901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184925896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 1
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 7
 --- !u!1 &314596884
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +413,7 @@ GameObject:
   - component: {fileID: 314596886}
   - component: {fileID: 314596888}
   - component: {fileID: 314596887}
+  - component: {fileID: 314596889}
   m_Layer: 0
   m_Name: Tableau7
   m_TagString: Tableau
@@ -511,6 +532,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &314596889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314596884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 7
 --- !u!1 &354079296
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +684,7 @@ GameObject:
   - component: {fileID: 519802639}
   - component: {fileID: 519802641}
   - component: {fileID: 519802640}
+  - component: {fileID: 519802642}
   m_Layer: 0
   m_Name: Foundation5
   m_TagString: Foundation
@@ -762,6 +803,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 7.26}
   m_EdgeRadius: 0
+--- !u!114 &519802642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519802637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 1
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 5
 --- !u!1 &525812697
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +834,7 @@ GameObject:
   - component: {fileID: 525812699}
   - component: {fileID: 525812701}
   - component: {fileID: 525812700}
+  - component: {fileID: 525812702}
   m_Layer: 0
   m_Name: Foundation2
   m_TagString: Foundation
@@ -892,6 +953,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 7.26}
   m_EdgeRadius: 0
+--- !u!114 &525812702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525812697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 1
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 2
 --- !u!1 &616380895
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +984,7 @@ GameObject:
   - component: {fileID: 616380897}
   - component: {fileID: 616380899}
   - component: {fileID: 616380898}
+  - component: {fileID: 616380900}
   m_Layer: 0
   m_Name: Foundation3
   m_TagString: Foundation
@@ -1022,6 +1103,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 7.26}
   m_EdgeRadius: 0
+--- !u!114 &616380900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616380895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 1
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 3
 --- !u!1 &635105107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1134,7 @@ GameObject:
   - component: {fileID: 635105109}
   - component: {fileID: 635105111}
   - component: {fileID: 635105110}
+  - component: {fileID: 635105112}
   m_Layer: 0
   m_Name: Tableau3
   m_TagString: Tableau
@@ -1152,6 +1253,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &635105112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635105107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 3
 --- !u!1 &716646007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1284,7 @@ GameObject:
   - component: {fileID: 716646009}
   - component: {fileID: 716646011}
   - component: {fileID: 716646010}
+  - component: {fileID: 716646012}
   m_Layer: 0
   m_Name: Foundation4
   m_TagString: Foundation
@@ -1282,6 +1403,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 7.26}
   m_EdgeRadius: 0
+--- !u!114 &716646012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716646007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 1
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 4
 --- !u!1 &804121414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1434,7 @@ GameObject:
   - component: {fileID: 804121416}
   - component: {fileID: 804121418}
   - component: {fileID: 804121417}
+  - component: {fileID: 804121419}
   m_Layer: 0
   m_Name: Tableau8
   m_TagString: Tableau
@@ -1412,6 +1553,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &804121419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804121414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 8
 --- !u!1 &868482924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1584,7 @@ GameObject:
   - component: {fileID: 868482926}
   - component: {fileID: 868482928}
   - component: {fileID: 868482927}
+  - component: {fileID: 868482929}
   m_Layer: 0
   m_Name: Tableau4
   m_TagString: Tableau
@@ -1542,6 +1703,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &868482929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868482924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 4
 --- !u!1 &958712806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1734,7 @@ GameObject:
   - component: {fileID: 958712808}
   - component: {fileID: 958712810}
   - component: {fileID: 958712809}
+  - component: {fileID: 958712811}
   m_Layer: 0
   m_Name: Foundation6
   m_TagString: Foundation
@@ -1672,6 +1853,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 7.26}
   m_EdgeRadius: 0
+--- !u!114 &958712811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958712806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 1
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 6
 --- !u!1 &1117421288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1884,7 @@ GameObject:
   - component: {fileID: 1117421290}
   - component: {fileID: 1117421292}
   - component: {fileID: 1117421291}
+  - component: {fileID: 1117421293}
   m_Layer: 0
   m_Name: Tableau6
   m_TagString: Tableau
@@ -1802,6 +2003,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1117421293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117421288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 6
 --- !u!1 &1219071746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,6 +2034,7 @@ GameObject:
   - component: {fileID: 1219071748}
   - component: {fileID: 1219071750}
   - component: {fileID: 1219071749}
+  - component: {fileID: 1219071751}
   m_Layer: 0
   m_Name: Tableau5
   m_TagString: Tableau
@@ -1932,6 +2153,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1219071751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219071746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 5
 --- !u!1 &1353197107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,6 +2224,7 @@ GameObject:
   - component: {fileID: 1444811556}
   - component: {fileID: 1444811558}
   - component: {fileID: 1444811557}
+  - component: {fileID: 1444811559}
   m_Layer: 0
   m_Name: Foundation1
   m_TagString: Foundation
@@ -2102,6 +2343,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 7.26}
   m_EdgeRadius: 0
+--- !u!114 &1444811559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444811554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 1
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 1
 --- !u!1 &1449782265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,6 +2374,7 @@ GameObject:
   - component: {fileID: 1449782267}
   - component: {fileID: 1449782269}
   - component: {fileID: 1449782268}
+  - component: {fileID: 1449782270}
   m_Layer: 0
   m_Name: Tableau2
   m_TagString: Tableau
@@ -2232,6 +2493,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1449782270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449782265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 2
 --- !u!1 &1523509879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,6 +2542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a4b0147d0a8f7d4ea620ae8e5b1157b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedCard: {fileID: 0}
 --- !u!114 &1523509881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,6 +2662,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4e7174625f3afdd458340f1ea34a7a90, type: 3}
   cardPrefab: {fileID: 6172814334617791106, guid: c0ff3e4d5a2be654daca0cf925580661,
     type: 3}
+  wastePos: {fileID: 70665424}
   bottomPos:
   - {fileID: 1897873690}
   - {fileID: 2017970912}
@@ -2401,6 +2683,7 @@ MonoBehaviour:
   - {fileID: 519802637}
   - {fileID: 958712806}
   - {fileID: 184925896}
+  waste: []
   deck: []
 --- !u!4 &1523509882
 Transform:
@@ -2558,6 +2841,7 @@ GameObject:
   - component: {fileID: 1897873692}
   - component: {fileID: 1897873694}
   - component: {fileID: 1897873693}
+  - component: {fileID: 1897873695}
   m_Layer: 0
   m_Name: Tableau0
   m_TagString: Tableau
@@ -2676,6 +2960,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1897873695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897873690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 0
 --- !u!1 &1947360950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,6 +3023,7 @@ GameObject:
   - component: {fileID: 1983468645}
   - component: {fileID: 1983468647}
   - component: {fileID: 1983468646}
+  - component: {fileID: 1983468648}
   m_Layer: 0
   m_Name: Tableau9
   m_TagString: Tableau
@@ -2838,6 +3142,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1983468648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983468643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 9
 --- !u!1 &2017970912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,6 +3173,7 @@ GameObject:
   - component: {fileID: 2017970914}
   - component: {fileID: 2017970916}
   - component: {fileID: 2017970915}
+  - component: {fileID: 2017970917}
   m_Layer: 0
   m_Name: Tableau1
   m_TagString: Tableau
@@ -2968,6 +3292,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2017970917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017970912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 1
 --- !u!1 &2105101585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,6 +3323,7 @@ GameObject:
   - component: {fileID: 2105101587}
   - component: {fileID: 2105101589}
   - component: {fileID: 2105101588}
+  - component: {fileID: 2105101590}
   m_Layer: 0
   m_Name: Foundation0
   m_TagString: Foundation
@@ -3098,6 +3442,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 7.26}
   m_EdgeRadius: 0
+--- !u!114 &2105101590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105101585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcafe5194dcbcb243a6670fd9e9a4196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceUp: 0
+  onFoundation: 1
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 0
 --- !u!1001 &6172814335131938376
 PrefabInstance:
   m_ObjectHideFlags: 0
