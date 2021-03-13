@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9b10437684e691344bafe2fc0f9df554, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5a5d7519a725699448cdef79d441cc50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardFace: {fileID: 0}
-  cardBack: {fileID: 21300000, guid: 9b10437684e691344bafe2fc0f9df554, type: 3}
+  cardBack: {fileID: 21300000, guid: 5a5d7519a725699448cdef79d441cc50, type: 3}
 --- !u!114 &5322245965452788733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,6 +112,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceUp: 0
+  onFoundation: 0
+  inWaste: 0
+  suit: 
+  rank: 0
+  color: 
+  posRow: 0
 --- !u!61 &6339799301205804637
 BoxCollider2D:
   m_ObjectHideFlags: 0

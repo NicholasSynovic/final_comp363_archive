@@ -145,7 +145,7 @@ public class Emperor : MonoBehaviour
     //draws one card from the deck and places it faceup at the top of waste pile
     public void DrawDeck()
     {
-        float zOffset = 0.01f * waste.Count;
+        float zOffset = .01f + (0.01f * waste.Count);
         if(deck.Count > 0 ){
             waste.Add(deck.Last<string>());
             deck.RemoveAt(deck.Count - 1);
